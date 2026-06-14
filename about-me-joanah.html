@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joanah Rhea Flores - Profile</title>
+    <link rel="stylesheet" href="jo.css">
+</head>
+<body>
+<a href="Joanah.html" class="back-btn">Back to Profile</a>
+
+<!-- PAGE 1: WELCOME PROFILE -->
+<div class="page active" id="page1">
+    <div class="container">
+        <div class="profile-pic">
+            <img src="jo.jpeg" alt="Joanah Rhea Flores">
+        </div>
+        <h1>Welcome to my profile</h1>
+        <p class="welcome-text">It’s nice to see you here.<br>Let me share a little bit about myself!</p>
+        <button onclick="goToPage(2)" class="nav-btn"> Next</button>
+    </div>
+</div>
+
+<!-- PAGE 2: ABOUT ME -->
+<div class="page" id="page2">
+    <div class="container">
+        <button onclick="goToPage(1)" class="nav-btn back">Back</button>
+        <h1>About Me</h1>
+        <div class="grid-layout">
+            <div class="card">
+                <h3>Personal Information</h3>
+                <p><strong>Complete Name:</strong> Joanah Rhea Flores</p>
+                <p><strong>Course & Year:</strong> Bachelor of Science in Office Administration - 2nd Year</p>
+            </div>
+            <div class="card">
+                <h3>Short Introduction</h3>
+                <p>I am a dedicated and enthusiastic student who strives to do my best in everything I do. I have a strong interest in office management, organization, and communication. I am a positive person who loves learning new things and connecting with others.</p>
+            </div>
+            <div class="card">
+                <h3> Personal Background</h3>
+                <p>I was born on January 5, 2006, and I live in Barangbang, San Remigio, Antique, Philippines. I grew up in an incomplete family and being the eldest among my siblings, I was raised with strong values of hard work, respect, and kindness. This upbringing taught me to be responsible, independent, and resilient at an early age.</p>
+            </div>
+            <div class="card">
+                <h3> Hobbies & Interests</h3>
+                <p>In my free time, I enjoy watching K-Dramas, listening to music, exploring creative ideas, and reading articles about office work and lifestyle. These hobbies help me relax and inspire me to be more creative and expressive.</p>
+            </div>
+            <div class="card">
+                <h3>💡 Skills & Talents</h3>
+                <ul>
+                    <li>✅ Singing</li>
+                    <li>✅ Drawing & Designing</li>
+                    <li>✅ Organization & Filing</li>
+                    <li>✅ Time Management</li>
+                    <li>✅ Interpersonal & Teamwork Skills</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3> Career Goals</h3>
+                <p>My goal is to become a successful Office Administrator or Executive Assistant in a reputable company. I want to use my skills to help businesses run smoothly, grow professionally, and eventually take on leadership roles in administration or human resources.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function goToPage(num) {
+    document.getElementById('page1').classList.remove('active');
+    document.getElementById('page2').classList.remove('active');
+    document.getElementById('page' + num).classList.add('active');
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>

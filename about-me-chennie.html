@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chennie Naluis- Profile</title>
+    <link rel="stylesheet" href="chen.css">
+</head>
+<body>
+<a href="chennie.html" class="back-btn">Back to Profile</a>
+
+<!-- PAGE 1: WELCOME PROFILE -->
+<div class="page active" id="page1">
+    <div class="container">
+        <div class="profile-pic">
+            <img src="chen.png" alt="CHENNIE NALUIS">
+        </div>
+        <h1>Welcome to my profile</h1>
+        <p class="welcome-text">It’s nice to see you here.<br>Let me share a little bit about myself!</p>
+        <button onclick="goToPage(2)" class="nav-btn"> Next</button>
+    </div>
+</div>
+
+<!-- PAGE 2: ABOUT ME -->
+<div class="page" id="page2">
+    <div class="container">
+        <button onclick="goToPage(1)" class="nav-btn back">Back</button>
+        <h1>About Me</h1>
+        <div class="grid-layout">
+            <div class="card">
+                <h3>Personal Information</h3>
+                <p><strong>Complete Name:</strong> Chennie Naluis</p>
+                <p><strong>Course & Year:</strong> Bachelor of Science in Office Administration - 2nd Year</p>
+            </div>
+            <div class="card">
+                <h3>Short Introduction</h3>
+                <p>I am a hardworking and goal-oriented student who takes my studies seriously. I enjoy learning how offices work, how to organize task, and how to communicate clearly. I am always ready to healp, open to new ideas, and do my best to finish what i started.</p>
+            </div>
+            <div class="card">
+                <h3> Personal Background</h3>
+                <p>I was born on August 31,2006, and I live in Maasin, Sibalom, Antique. My family taught me to be honest,humble, and responsible.Growing up, I learned that effort and good attitude are just as important as knowledge in reaching my dreams.</p>
+            </div>
+            <div class="card">
+                <h3> Hobbies & Interests</h3>
+                <p>When I have free time, I love listening to music, watching short dramas, arranging my notes and files. These keep me relaxed while also helping me learn new things</p>
+            </div>
+            <div class="card">
+                <h3>💡 Skills & Talents</h3>
+                <ul>
+                    <li>✅ Singing</li>
+                    <li>✅ Cooking</li>
+                    <li>✅ Photography</li>
+                    <li>✅ Time Management</li>
+                    
+                </ul>
+            </div>
+            <div class="card">
+                <h3> Career Goals</h3>
+                <p>My goal is to become a successful Office Administrator or Executive Assistant. I want to use what I learn to help offices run smoothly, grow professionally, and take on bigger roles in the future..</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function goToPage(num) {
+    document.getElementById('page1').classList.remove('active');
+    document.getElementById('page2').classList.remove('active');
+    document.getElementById('page' + num).classList.add('active');
+    window.scrollTo(0, 0);
+}
+</script>
+
+</body>
+</html>

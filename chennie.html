@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chennie - Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- TOP BLUE BAR -->
+  <div class="profile-top-bar">
+    <div class="user-dropdown" id="displayName">Its_Chen▾</div>
+    <div class="top-icons">
+      <button class="icon-btn">🔍</button>
+      <button class="icon-btn">↗</button>
+       <a href="index.html" class="btn-login">☰</a>
+    </div>
+  </div>
+
+  <!-- TOOLTIP -->
+  <div class="tooltip">
+    <span>NEW: Account settings moved to your profile</span>
+    <button class="close-tooltip">×</button>
+  </div>
+
+  <!-- PROFILE HEADER -->
+  <div class="profile-header">
+    <div class="avatar-wrapper">      
+      <img src="chen.png" width="80" height="100">
+      <input type="file" id="picUpload" accept="image/*">
+    </div>
+
+    <div class="name-row">
+      <h1 id="profileName">Its_Chen</h1>
+      <a href="#" class="edit-link">Edit</a>
+    </div>
+
+    <p class="meta">u/<span id="userHandle">Its_Chen</span> • 1.5kfollowers &gt;</p>
+    <a href="#" class="social-link">Facebook - https://www.facebook.com/chennie.naluis.2024 &gt;</a>
+
+    <div class="achievements">
+      <span>🏆</span>
+      <span>🎨</span>
+      <span>🎮</span>
+      <span>3 achievements &gt;</span>
+    </div>
+  </div>
+
+  <!-- STATS ROW -->
+  <div class="stats-row">
+    <div class="stat"><span class="num">1</span><span class="label">Karma</span></div>
+    <div class="stat"><span class="num">0</span><span class="label">Contributions &gt;</span></div>
+    <div class="stat"><span class="num">3m</span><span class="label">Account Age</span></div>
+    <div class="stat"><span class="num">0</span><span class="label">Active In</span></div>
+  </div>
+
+
+  <!-- TAB CONTENT -->
+  <div class="tab-content">
+    <div class="karma-row">
+      <div><span class="val">1</span> Post Karma</div>
+      <div><span class="val">0</span> Comment Karma</div>
+    </div>
+     <div class="tabs-container">
+            
+            <div class="tab-item" onclick="window.open('about-me-chennie.html','_self')">👤 About Me</div>
+            <div class="tab-item" onclick="window.open('education-chennie.html','_self')">🎓 Education</div>
+            <div class="tab-item" onclick="window.open('office-ad-chennie.html','_self')">💼 Office Administration</div>
+            <div class="tab-item" onclick="window.open('gallery-chennie.html','_self')">🖼️ Photo Gallery</div>
+        </div>
+
+    <div class="trophies">TROPHIES</div>
+  </div>
+
+  <!-- BOTTOM NAV -->
+  <div class="bottom-nav">
+    <button class="nav-item">
+      <span class="nav-icon">🏠</span>
+      <span>Home</span>
+    </button>
+    <button class="nav-item">
+      <span class="nav-icon">+</span>
+      <span>Create</span>
+    </button>
+    <button class="nav-item">
+      <span class="nav-icon">🔔</span>
+      <span>Inbox</span>
+    </button>
+    <button class="nav-item active">
+      <span class="nav-icon user-icon">👤</span>
+      <span>You</span>
+    </button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
